@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="card">
+        <div class="calc-head">
+            <input type="text" id="result" maxlength="10">
+        </div>
+        <div class="calc-body">
+            <div>
+                <input type="button" class="btn" value="c" onclick="clearres()">
+                <input type="button" class="btn" value="+/-">
+                <input type="button" class="btn" value="%">
+                <input type="button" class="btn btn-style" value="/" onclick="insertnum('/')">
+            </div>
+            <div>
+                <input type="button" class="btn" value="7" onclick="insertnum(7)">
+                <input type="button" class="btn" value="8" onclick="insertnum(8)">
+                <input type="button" class="btn" value="9" onclick="insertnum(9)">
+                <input type="button" class="btn btn-style" value="X" onclick="insertnum('*')">
+            </div>
+            <div>
+                <input type="button" class="btn" value="4" onclick="insertnum(4)">
+                <input type="button" class="btn" value="5" onclick="insertnum(5)">
+                <input type="button" class="btn" value="6" onclick="insertnum(6)">
+                <input type="button" class="btn btn-style" value="-" onclick="insertnum('-')">
+            </div>
+
+            <div>
+                <input type="button" class="btn" value="1" onclick="insertnum(1)">
+                <input type="button" class="btn" value="2" onclick="insertnum(2)">
+                <input type="button" class="btn" value="3" onclick="insertnum(3)">
+                <input type="button" class="btn btn-style" value="+" onclick="insertnum('+')">
+
+            </div>
+            <div>
+                <input type="button" class="btn" value="0" onclick="insertnum(0)">
+                <input type="button" class="btn" value="." onclick="insertnum('.')">
+                <input type="button" class="btn" value="DEL" onclick="deleteNums()">
+                <input type="button" class="btn" style=background-color:orange; value= "=" onclick="calculate()">
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
